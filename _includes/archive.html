@@ -1,10 +1,18 @@
 {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
 
 <div class="archive">
+
+  <h2>WIP</h2>
+  <ul>
+    <li><a href="/WIP/Vulkan-Renderer">Vulkan Renderer.</a> <span class="lead">Hobby project</span></li>
+  </ul>
+
   {% for yearMonth in postsByYearMonth %}
   <h2>{{ yearMonth.name }}</h2>
   <ul>
     {% for post in yearMonth.items %}
+    <!-- <div id="archive-header" class="archive-header-size" style="background-image: url('/assets/jpg/heatmap.png')"></div> -->
+    <div id="archive-header" class="archive-header-size" style="background-image: url({{ post.img }})"></div>
     <li><a href="{{ post.url }}">{{ post.title }}.</a> <span class="lead">{{ post.lead }}</span></li>
     {% endfor %}
   </ul>

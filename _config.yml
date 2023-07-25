@@ -1,20 +1,21 @@
 # site settings
 
-title: cvless
-description: Jekyll theme for a beautiful online CV
-taglong: Jekyll theme for a beautiful online CV
-tagshort: Jekyll theme
-url: https://cvless.netlify.app
+title: Jonas Olesen's 
+description: Jonas Olesen's Code Portfolio
+taglong: Code Portfolio
+tagshort: Code Portfolio
+url: https://olesenjonas.github.io
 baseurl: ""
 permalink: pretty
-repo: https://github.com/username/username.github.io
+repo: https://github.com/OlesenJonas/OlesenJonas.github.io
 
 # author settings
 
 author:
-  name: Place Holder
-  email: username@domain.com
-photo: /assets/jpg/photo.jpg
+  name: Jonas Olesen
+  email: jonasolesenpublic@gmail.com
+# photo: /assets/jpg/photo.jpg
+# photo: https://cdna.artstation.com/p/users/avatars/000/985/200/large/1422f4f5d873ff0118c1b09cd7ccc012.jpg?1686596037
 
 # build settings
 

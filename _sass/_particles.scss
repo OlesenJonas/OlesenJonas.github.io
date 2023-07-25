@@ -3,7 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: var(--color-particles-background);
+  // background-color: var(--color-particles-background);
+  background-image: url("../jpg/heatmap.png");
+  background-blend-mode: multiply;
+  background-color: rgb(219, 219, 219);
 
   .particles-js-canvas-el {
     width: 100%;
@@ -30,8 +33,15 @@
 }
 
 .particles-photo {
-  width: 50%;
+  width: 25%;
   border-radius: 50%;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+.background-photo {
+  // width: 100%;
+  // object-fit: cover;
   margin: auto;
   margin-bottom: 0.5em;
 }
@@ -62,11 +72,42 @@
     transform: scale(1.8);
   }
 
+  // fill: var(--color-particles-text);
+
   svg circle,
   svg path {
     stroke: var(--color-particles-text) !important;
     stroke-width: 0.05em;
   }
+
+  &:focus,
+  &:hover {
+    border: none;
+
+    svg circle,
+    svg path {
+      stroke-width: 0.075em;
+    }
+  }
+}
+
+.particles-icon-fill {
+  margin: 0 0.5em;
+  pointer-events: all;
+
+  svg {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    fill: var(--color-particles-text);
+    // fill: white;
+  }
+
+
+  // svg circle,
+  // svg path {
+  //   stroke: var(--color-particles-text) !important;
+  //   stroke-width: 0.05em;
+  // }
 
   &:focus,
   &:hover {
@@ -95,5 +136,40 @@
   svg {
     -webkit-transform: scale(2.7);
     transform: scale(2.7);
+  }
+}
+
+#archive-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  // background-attachment: fixed;
+  // // background-color: var(--color-particles-background);
+  // background-image: url("../jpg/heatmap.png");
+  // background-blend-mode: multiply;
+  // background-color: rgb(219, 219, 219);
+
+  // .particles-js-canvas-el {
+  //   width: 100%;
+  //   height: 99.5vh !important;
+  // }
+
+  // .jumbotron {
+  //   position: absolute;
+  //   top: 44%;
+  //   left: 50%;
+  //   -webkit-transform: translate(-50%, -50%);
+  //   transform: translate(-50%, -50%);
+  //   pointer-events: none;
+  // }
+}
+
+.archive-header-size {
+  width: 100%;
+  min-height: 5em;
+
+  h1,
+  h2 {
+    color: var(--color-particles-text);
   }
 }
